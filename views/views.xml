@@ -41,9 +41,7 @@
     -->
 
     <!-- Top menu item -->
-    <!--
-    <menuitem name="openacademy" id="openacademy.menu_root"/>
-    -->
+    <menuitem name="openacademy" id="menu_root"/>
     <!-- menu categories -->
     <!--
     <menuitem name="Menu 1" id="openacademy.menu_1" parent="openacademy.menu_root"/>
