@@ -18,7 +18,6 @@
                                 <field name="description"/>
                             </page>
                             <page string="About">
-
                             </page>
                         </notebook>
                     </sheet>
