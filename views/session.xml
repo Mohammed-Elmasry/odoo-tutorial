@@ -1,7 +1,40 @@
 <odoo>
     <data>
 
+        <!-- form view-->
 
+        <record model="ir.ui.view" id="session_form_view">
+            <field name="name">Sessions Form</field>
+            <field name="model">openacademy.session</field>
+            <field name="arch" type="xml">
+                <form string="Session Form">
+                    <group>
+                        <group string="General">
+                            <field name="course_id"/>
+                            <field name="name"/>
+                            <field name="instructor_id"/>
+                        </group>
+                    </group>
+                    <group string="Schedule">
+                        <field name="start_date"/>
+                        <field name="duration"/>
+                        <field name="seats"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <!-- tree view -->
+        <record model="ir.ui.view" id="session_list_view">
+            <field name="name">Sessions list</field>
+            <field name="model">openacademy.session</field>
+            <field name="arch" type="xml">
+                <tree string="Session List">
+                    <field name="name"/>
+                    <field name="course_id"/>
+                </tree>
+            </field>
+        </record>
 
         <!-- action window-->
 
