@@ -68,7 +68,7 @@
     </record>
 
 
-    <menuitem id="main_openacademy_menu" name="Open Academy"/>
+    <menuitem id="main_openacademy_menu" name="Open Academy"/> <!-- side list because it doesn't have a parent-->
 
     <menuitem id="openacademy_menu" name="Open Academy" parent="main_openacademy_menu"/>
 
