@@ -6,4 +6,5 @@ class Course(models.Model):
 
     name = fields.Char(string="Title", required=True)
     description = fields.Text()
-
+    responsible_id = fields.Man2one('res.partner', required=True,
+                ondelete='set null', string="Responsible", index=True)
