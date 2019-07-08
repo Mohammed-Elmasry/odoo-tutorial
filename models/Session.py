@@ -12,4 +12,4 @@ class Session(models.Model):
     course_id = fields.Many2one('openacademy.course', ondelete="cascade", string="Course",
                                 required=True)
 
-    attendee_id = fields.Many2many('res.partner', string="Attendees")
+    attendee_ids = fields.Many2many('res.partner', string="Attendees")
