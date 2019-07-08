@@ -39,9 +39,11 @@
       </field>
     </record>
     -->
+     <menuitem id="main_openacademy_menu" name="Open Academy"/>
+
 
     <!-- Top menu item -->
-    <menuitem name="openacademy" id="menu_root"/>
+<!--    <menuitem name="openacademy" id="menu_root"/>-->
     <!-- menu categories -->
     <!--
     <menuitem name="Menu 1" id="openacademy.menu_1" parent="openacademy.menu_root"/>
