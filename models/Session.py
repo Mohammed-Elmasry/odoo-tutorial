@@ -1,4 +1,4 @@
-from odoo import models, fields, api
+from odoo import models, fields, api, exceptions
 from datetime import datetime
 
 class Session(models.Model):
@@ -45,3 +45,10 @@ class Session(models.Model):
                     'message':"Increase number of seats or remove excess attendees"
                 }
             }
+
+    # api.constrains work much as onsave() not onchange()
+    @api.constrains("instructor_id","attendee_ids")
+    def _check_instructor_not_in_attendee(self):
+        for record in self:
+            if record.instructor_id and record.instructor_id in self.attendee_ids:
+                raise exceptions.ValidationError("A sessions's instructor cannot be an attendant")
