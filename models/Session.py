@@ -46,9 +46,16 @@ class Session(models.Model):
                 }
             }
 
-    # api.constrains work much as onsave() not onchange()
-    @api.constrains("instructor_id","attendee_ids")
+
+    @api.constrains("attendee_ids")
     def _check_instructor_not_in_attendee(self):
-        for record in self:
-            if record.instructor_id and record.instructor_id in self.attendee_ids:
-                raise exceptions.ValidationError("A sessions's instructor cannot be an attendant")
+        if self.instructor_id in self.attendee_ids:
+            raise exceptions.ValidationError("A sessions's instructor cannot be in attendees")
+
+
+
+    # @api.constrains("instructor_id","attendee_ids")
+    # def _check_instructor_not_in_attendee(self):
+    #     for record in self:
+    #         if record.instructor_id and record.instructor_id in self.attendee_ids:
+    #             raise exceptions.ValidationError("A sessions's instructor cannot be an attendant")
