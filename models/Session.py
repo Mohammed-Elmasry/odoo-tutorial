@@ -18,6 +18,8 @@ class Session(models.Model):
 
     taken_seats = fields.Float(string="Taken seats", compute="_taken_seats")
 
+    active = fields.Boolean(string="active", default=True)
+
     @api.depends("attendee_ids", "seats")
     def _taken_seats(self):
         for record in self:
