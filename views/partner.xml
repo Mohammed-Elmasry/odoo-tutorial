@@ -9,6 +9,7 @@
                     <page string="sessions">
                         <group>
                             <field name="instructor"/>
+                            <field name="category"/>
                             <field name="session_ids"/>
                         </group>
                     </page>
