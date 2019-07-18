@@ -31,6 +31,7 @@ class Session(models.Model):
     @api.onchange("attendee_ids", "seats")
     def _verify_valid_seats(self):
         if self.seats < 0:
+            self.seats = 0
             return {
                 'warning':{
                     'title':"Incorrect 'seats' value",
