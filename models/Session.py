@@ -27,3 +27,20 @@ class Session(models.Model):
                 record.seats = 0.0;
             else:
                 record.taken_seats = 100.0 * len(record.attendee_ids) / record.seats
+
+    @api.onchange("attendee_ids", "seats")
+    def _verify_valid_seats(self):
+        if self.seats < 0:
+            return {
+                'warning':{
+                    'title':"Incorrect 'seats' value",
+                    'message':"The number of seats cannot be negative"
+                }
+            }
+        if self.seats < len(self.attendee_ids):
+            return {
+                'warning' :{
+                    'title':"Too Many Attendees",
+                    'message':"Increase number of seats or remove excess attendees"
+                }
+            }
