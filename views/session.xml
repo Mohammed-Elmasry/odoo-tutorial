@@ -18,6 +18,7 @@
                     <group string="Schedule">
                         <field name="start_date"/>
                         <field name="duration"/>
+                        <field name="active"/>
                         <field name="seats"/>
                         <field name="taken_seats" widget="progressbar"/>
                     </group>
