@@ -17,7 +17,7 @@ class Session(models.Model):
 
     taken_seats = fields.Float(string="Taken seats", compute="_taken_seats")
 
-    @api.depends("attendee_ids", seats)
+    @api.depends("attendee_ids", "seats")
     def _taken_seats(self):
         for record in self:
             if not record.seats:
