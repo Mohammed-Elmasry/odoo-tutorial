@@ -19,8 +19,7 @@
       <change afterPath="$PROJECT_DIR$/../clinic_management/views/templates.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../clinic_management/views/views.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Partner.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/Partner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/partner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/views/partner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Session.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/Session.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/models/Session.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="11" column="101" selection-start-line="11" selection-start-column="101" selection-end-line="11" selection-end-column="101" />
+              <caret line="11" column="113" selection-start-line="11" selection-start-column="113" selection-end-line="11" selection-end-column="113" />
             </state>
           </provider>
         </entry>
@@ -96,7 +95,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/partner.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
@@ -129,9 +128,9 @@
         <option value="$PROJECT_DIR$/views/session.xml" />
         <option value="$PROJECT_DIR$/models/__init__.py" />
         <option value="$PROJECT_DIR$/__manifest__.py" />
-        <option value="$PROJECT_DIR$/models/Session.py" />
         <option value="$PROJECT_DIR$/models/Partner.py" />
         <option value="$PROJECT_DIR$/views/partner.xml" />
+        <option value="$PROJECT_DIR$/models/Session.py" />
       </list>
     </option>
   </component>
@@ -323,10 +322,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/Session.py">
+    <entry file="file://$PROJECT_DIR$/views/partner.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="101" selection-start-line="11" selection-start-column="101" selection-end-line="11" selection-end-column="101" />
+        <state relative-caret-position="119">
+          <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
         </state>
       </provider>
     </entry>
@@ -337,10 +336,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/partner.xml">
+    <entry file="file://$PROJECT_DIR$/models/Session.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
+        <state relative-caret-position="165">
+          <caret line="11" column="113" selection-start-line="11" selection-start-column="113" selection-end-line="11" selection-end-column="113" />
         </state>
       </provider>
     </entry>
